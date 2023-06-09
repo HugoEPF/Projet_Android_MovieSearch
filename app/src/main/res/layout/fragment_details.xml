@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        >
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Retour"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Titre"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Résumé"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/overviewTv"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="Overview"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popularité"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/popularityTv"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="popularité"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genres"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/genresTv"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="genre"/>
+
+        <Switch
+            android:id="@+id/SwitchAddMovieFavourite"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:text="Ajoutez aux favoris"
+            android:textColor="#FFFDFD"
+            android:textOff="Not like"
+            android:textOn="Like"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommendations : "
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="80dp"
+                tools:ignore="MissingConstraints">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

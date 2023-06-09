@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MovieSearch</string>
+    <string name="title_favoris">Favoris</string>
+    <string name="title_code">Scan</string>
+    <string name="title_search">search</string>
+    <string name="title_people">People</string>
+    <string name="title_home">Home</string>
+    <string name="start_scan">début du scan</string>
+    <string name="continue_button">Démarrez</string>
+    <string name="app_logo">Démarrez</string>
+</resources>

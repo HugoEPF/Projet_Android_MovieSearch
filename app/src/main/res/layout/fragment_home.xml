@@ -1,0 +1,111 @@
+<!-- fragment_home.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333333">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movies_now"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Films au cinéma"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieTitleNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+           />
+
+        <TextView
+            android:id="@+id/movies_popular"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Films les plus populaires"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieTitlePopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+
+        <TextView
+            android:id="@+id/movies_TopRated"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Films les mieux notés"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieTitleTopRated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        <TextView
+            android:id="@+id/movies_UpComing"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Films qui sortent prochainement"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movieTitleUpComing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        <TextView
+            android:id="@+id/txt_vide"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:padding="16dp"
+            android:text="" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
